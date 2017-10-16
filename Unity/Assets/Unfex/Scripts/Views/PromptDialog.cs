@@ -1,7 +1,7 @@
 ﻿/**
  * Unfex - unferno extentions
  *
- * @overview	UX provides a basic set of classes that can be used as a foundation for application development.
+ * @overview	Unfex provides a basic set of classes that can be used as a foundation for application development.
  * @author		taka:unferno.jp
  * @version		1.0.0
  * @see			http://unferno.jp/
