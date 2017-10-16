@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2662B409-6332-1E56-D797-C9025C53BDD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_1_1;UNITY_2017_1;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\Command.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\CommandList.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\CoroutineStart.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DebugLog.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DoDestroy.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DoInstantiate.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOAnchorPosTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOBlurTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOColorTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOFadeTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOLocalMoveTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOLocalRotateQuaternionTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOMoveTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOScaleTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOSizeDeltaTo.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\DOTweens\DOTweenCommand.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\Func.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\ParallelList.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\Prop.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\SerialList.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\Wait.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Commands\WaitEvent.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXButton.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXComponent.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXDropdown.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXImage.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXInputField.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXRawImage.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXScrollbar.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXScrollRect.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXSlider.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Components\UXToggle.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\DataEventData.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\ErrorEventData.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\IEventDelegatable.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\InputEventData.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\ModelEventData.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\SceneEventData.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\UXEvent.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\UXEventData.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\UXEventDelegate.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Events\ViewEventData.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Impls\IAlphable.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Impls\IBlurable.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Impls\IFocusable.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\IO\DataLoader.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Managers\SceneManager.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Managers\UXManager.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Managers\ViewManager.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Models\JsonModel.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Models\Model.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Scenes\SceneId.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Scenes\SceneObject.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Scenes\SceneStatus.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Utils\ArrayUtil.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Utils\ReflectionUtil.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Utils\Stopwatch.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Utils\StringUtil.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Utils\TextUtil.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Utils\TransformUtil.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\UXBehaviour.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\UXDebugger.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\UXStarter.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\AlertDialog.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\ConfirmDialog.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\Core\DialogBase.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\Core\PageBase.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\Core\ProgressIndicatorBase.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\PromptDialog.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\TextPage.cs" />
+     <Compile Include="Assets\Plugins\UX\Scripts\Views\TextProgressIndicator.cs" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity_2017.1.1p3/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/Users/sydney/Workspaces/ux/Unity/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
